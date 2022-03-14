@@ -20,28 +20,28 @@ const questions = [
         answer: 'As many as you need'
     },
     {
-        title: 'What is the most current ',
-        choices: ['#id', '$id', '.id', '?id'],
+        title: 'What is the most current html doctype?',
+        choices: ['HTMLnow', 'HTML2', 'HTML2022', 'HTML5'],
         answer: '#id'
     },
     {
-        title: 'What is the correct way to use a class in HTML/CSS?',
-        choices: ['#class', '$class', '.class', '?class'],
-        answer: '.class'
+        title: 'How do you send information to the console in JavaScript?',
+        choices: ['console.output()', 'sendto.console()', 'console.log()', 'console.info()'],
+        answer: 'console.log()'
     },
     {
-        title: 'Which of these would NOT set a color in HTML/CSS?',
-        choices: ['#000000', 'black', 'rgb(255, 99, 71)', '@2'],
-        answer: '@2'
+        title: 'Where is the correct place to insert a JavaScript?',
+        choices: ['The <head> section', 'the <body> section', 'Both the <head> and <body> sections are correct'],
+        answer: 'Both the <head> and <body> sections are correct'
     },
     {
-        title: 'What does HTML stand for?',
-        choices: ['Hypertext Markup Language', 'Hydrotext Manipulation Language', 'Home Text Manuscript Learning', 'Holy Trout, My Lentils!'],
-        answer: 'Hypertext Markup Language'
+        title: 'What does CSS stand for?',
+        choices: ['Cascading Style Sheets', 'Central Style Sheet', 'Cool Site Styling', 'Cats Still Sleep'],
+        answer: 'Cascading Style Sheets'
     }, {
-        title: 'Which tag has the largest heading?',
-        choices: ['h1', 'h2', 'mega-h', 'hINFINITY'],
-        answer: 'h1'
+        title: 'Which order should we use header tags in?',
+        choices: ['header1, header2, header3, header4', 'h4, h3, h2, h1', 'h1, h2, h3, h4', 'header4, header3, header2, header1'],
+        answer: 'h1, h2, h3, h4'
     },
     {
         title: 'Which HTML element do we store JavaScript in?',

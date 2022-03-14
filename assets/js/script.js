@@ -9,7 +9,7 @@ var timerEl = document.getElementById("time");
 var choicesEl = document.getElementById("choices");
 var submitBtn = document.getElementById("submit");
 var startBtn = document.getElementById("start");
-var initialsEl = document.getElementById("initials");
+var nameEl = document.getElementById("name");
 var feedbackEl = document.getElementById("feedback");
 
 // function for starting quiz
@@ -71,9 +71,9 @@ function questionClick() {
         // display new time on page
         timerEl.textContent = time;
 
-        feedbackEl.textContent = "Wrong!";
+        feedbackEl.textContent = "No!";
     } else {
-        feedbackEl.textContent = "Correct!";
+        feedbackEl.textContent = "Yes!";
     }
 
     // flash right/wrong feedback on page for half a second
@@ -122,10 +122,10 @@ function clockTick() {
 
 function saveHighscore() {
     // get value of input box
-    var initials = initialsEl.value.trim();
+    var userName = nameEl.value.trim();
 
     // make sure value wasn't empty
-    if (initials !== "") {
+    if (userName !== "") {
         // get saved scores from localstorage, or if not any, set to empty array
         var highscores =
             JSON.parse(window.localStorage.getItem("highscores")) || [];
@@ -133,7 +133,7 @@ function saveHighscore() {
         // format new score object for current user
         var newScore = {
             score: time,
-            initials: initials
+            userName: userName
         };
 
         // save to localstorage
@@ -158,4 +158,4 @@ submitBtn.onclick = saveHighscore;
 // user clicks button to start quiz
 startBtn.onclick = startQuiz;
 
-initialsEl.onkeyup = checkForEnter;
+nameEl.onkeyup = checkForEnter;
