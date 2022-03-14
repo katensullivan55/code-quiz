@@ -3,7 +3,7 @@
 ## Description
 Code quiz designed to test basic knowledge of HTML, CSS, and JavaScript
 ## Link
-
+[Link to Code Quiz](https://katensullivan55.github.io/code-quiz/)
 ## Usage
 GIVEN I am taking a code quiz
 WHEN I click the start button
