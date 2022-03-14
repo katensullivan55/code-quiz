@@ -71,9 +71,9 @@ function questionClick() {
         // display new time on page
         timerEl.textContent = time;
 
-        feedbackEl.textContent = "No!";
+        feedbackEl.textContent = "Incorrect! -15s";
     } else {
-        feedbackEl.textContent = "Yes!";
+        feedbackEl.textContent = "Correct!";
     }
 
     // flash right/wrong feedback on page for half a second
