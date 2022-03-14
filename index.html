@@ -4,13 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Code Quiz</title>
+
+    <link rel="stylesheet"  href="./assets/css/style.css" />
 </head>
+
 <body>
-    <header class="header">
-        <p>View High Scores</p>
-        <p class="timer"></p>
-    </header>
-    <section class="quiz"></section>
+    <div class="scores"><a href="highscores.html">View Highscores</a></div>
+
+    <div class="timer">Time: <span id="time">0</span></div>
+
+    <div class="wrapper">
+        <div id="start-screen" class="start">
+            <h1> Quiz Challenge</h1>
+            <p>
+                Tell me as much as you know about coding!
+            </p>
+            <button id="start">Code Quiz<br><span>Push to Start!</span></button>
+        </div>
+
+        <div id="questions" class="hide">
+            <h2 id="question-title"></h2>
+            <div id="choices" class="choices"></div>
+        </div>
+
+        <div id="end-screen" class="hide">
+            <h2>Complete!</h2>
+            <p>Your final score is <span id="final-score"></span>.</p>
+            <p>
+                What is your name?: <input type="text" id="initials" max="20" />
+                <button id="submit">Submit</button>
+            </p>
+        </div>
+
+        <div id="feedback" class="feedback hide"></div>
+    </div>
+
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/script.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+  }
+  
+  a {
+    color: #70a580;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #e7c34e;
+  }
+  
+  button {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 70%;
+    background-color: #70a580;
+    border-radius: 5px;
+    padding: 7px 20px;
+    color: white;
+    border: 3;
+  }
+
+  button span {
+      font-size: 65%;
+  }
+  
+  button:hover {
+    background-color: #e7c34e;
+    color: black;
+  }
+
+  button:click {
+    border-radius: 0;
+    border: none;
+  }
+  
+  .choices button {
+    display: block;
+  }
+  
+  input[type="text"] {
+    font-size: 100%;
+  }
+  
+  ol {
+    padding-left: 0px;
+    max-height: 400px;
+    overflow: auto;
+  }
+  
+  li {
+    padding: 5px;
+    list-style: decimal inside none;
+  }
+  
+  li:nth-child(odd) {
+    background-color: #f3edfc;
+  }
+  
+  .wrapper {
+    margin: 100px auto 0 auto;
+    max-width: 600px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .start {
+    text-align: center;
+  }
+  
+  .scores {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  
+  .feedback {
+    font-style: italic;
+    font-size: 120%;
+    margin-top: 20px;
+    padding-top: 10px;
+    color: gray;
+    border-top: 2px solid #ccc;
+  }
+  
+  .timer {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
